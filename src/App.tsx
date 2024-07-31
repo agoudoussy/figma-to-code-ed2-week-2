@@ -8,7 +8,7 @@ function App() {
 
   return (
     <Suspense fallback={<FallbackUI />}>
-      <BrowserRouter>
+      <BrowserRouter basename="/figma-to-code-ed2-week-1">
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
