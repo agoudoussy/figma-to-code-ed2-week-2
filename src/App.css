@@ -1,13 +1,35 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
   height: 100vh;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #0e1218;
 }
 
-footer {
-  margin-top: auto;
+.hero-section-container {
+  height: var(--height);
+}
+
+.cta-signup-container {
+  background-image: linear-gradient(90deg, rgb(1, 1, 2) 0%, rgb(0, 19, 30) 100%),
+    url("./assets/bicAstro.jpg");
+  /* background-color: rgba(0, 0, 0, 0.); */
+  background-blend-mode: soft-light;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 468px) {
+  .hero-section-illustration-container {
+    display: -webkit-inline-box !important;
+  }
+  .hero-section-container {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section-container {
+    height: auto !important;
+  }
 }
