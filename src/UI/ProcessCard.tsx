@@ -1,4 +1,4 @@
-import { fadeInVariant } from "animations/variants";
+import { fadeAndTranslateUpVariants, fadeInVariant } from "animations/variants";
 import { motion } from "framer-motion";
 import { FunctionComponent, SVGProps } from "react";
 
@@ -11,13 +11,13 @@ export type TProcessCard = {
 function ProcessCard({ icone: Icone, title, libelle }: TProcessCard) {
   return (
     <motion.div
-      variants={fadeInVariant}
+      variants={fadeAndTranslateUpVariants}
       transition={{
         duration: 0.8,
       }}
       initial="initial"
+      whileInView="translateUp"
       viewport={{ once: true }}
-      whileInView="fadeIn"
       className="bg-[#E8E9EA] p-[2.4rem] space-y-[1rem] rounded-[24px]"
     >
       <div className="bg-[#181D28] p-[1rem] w-max rounded-[8px]">

@@ -8,7 +8,7 @@ import { TProcessCard } from "UI/ProcessCard";
 import wallet from "assets/wallet.svg?react";
 import cloud from "assets/cloud.svg?react";
 import bitcoin from "assets/bitcoin.svg?react";
-import sale from "assets/cloud.svg?react";
+import sale from "assets/sale.svg?react";
 
 export const MENU_ITEM: TMenuItem[] = [
   {
@@ -76,5 +76,28 @@ export const PROCESS_CARD: TProcessCard[] = [
     title: "Sell your NFT's",
     libelle:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+  },
+];
+
+export const COLLECTIONS_CATEGORY = [
+  {
+    libelle: "All categories",
+    path: "/categories",
+  },
+  {
+    libelle: "Art",
+    path: "/art",
+  },
+  {
+    libelle: "Celebrities",
+    path: "/celebrities",
+  },
+  {
+    libelle: "Gaming",
+    path: "/gaming",
+  },
+  {
+    libelle: "Sport",
+    path: "/sport",
   },
 ];

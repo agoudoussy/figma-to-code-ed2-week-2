@@ -7,6 +7,10 @@ import CelesteRing from "assets/celesteRing.svg?react";
 import { CSSProperties, useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { fadeUpAnimation } from "animations/animations";
+import {
+  fadeAndTranslateDownVariants,
+  fadeAndTranslateUpVariants,
+} from "animations/variants";
 
 function HeroSection() {
   const [size, setSize] = useState(0);
@@ -76,15 +80,13 @@ function HeroSection() {
             <CelesteRing />
           </div>
           <motion.div
-            initial={{
-              translateY: 50,
-            }}
-            animate={{
-              translateY: 0,
-            }}
+            variants={fadeAndTranslateUpVariants}
             transition={{
-              duration: 0.5,
+              duration: 0.8,
             }}
+            initial="initial"
+            whileInView="translateUp"
+            viewport={{ once: true }}
             className="flex md:flex-row  md:items-center md:justify-center w-[287.58px] h-[442.29px] rounded-[164px] bg-[#0f1010] overflow-hidden mt-[14.6rem]"
           >
             <img
@@ -94,15 +96,13 @@ function HeroSection() {
             />
           </motion.div>
           <motion.div
-            initial={{
-              translateY: -50,
-            }}
-            animate={{
-              translateY: 0,
-            }}
+            variants={fadeAndTranslateDownVariants}
             transition={{
-              duration: 0.5,
+              duration: 0.8,
             }}
+            initial="initial"
+            whileInView="translateDown"
+            viewport={{ once: true }}
             className="flex items-center justify-center w-[287.58px] h-[442.29px] object-fill rounded-[164px] bg-[#0f1010] overflow-hidden "
           >
             <img

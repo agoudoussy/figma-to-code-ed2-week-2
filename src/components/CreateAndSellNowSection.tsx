@@ -1,4 +1,3 @@
-import CollectionsCard from "UI/CollectionsCard";
 import ComponentListRender from "UI/ComponentListRender";
 import Container from "UI/Container/Container";
 import Grid from "UI/Grid";

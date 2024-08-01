@@ -21,7 +21,7 @@ function MobileNavbar() {
       exit={{
         opacity: 0,
       }}
-      className="absolute inset-0 w-full h-screen bg-white block lg:hidden items-start px-[2.6rem] md:px-[5.2rem] space-y-[2rem] z-10  after:border-r-[1px] after:mr-[3rem] after:w-screen after:h-screen after:absolute after:-right-[15px]"
+      className="absolute inset-0 w-full h-screen bg-white block lg:hidden items-start px-[2.6rem] md:px-[5.2rem] space-y-[2rem] z-10 "
     >
       <Flex className=" space-y-[6.4rem]">
         <Flex className="space-y-[1.6rem] w-max text-left mt-[12.2rem]">
@@ -36,8 +36,8 @@ function MobileNavbar() {
           <Button text="Connect Wallet" />
         </Flex>
       </Flex>
-      <hr className=" w-full absolute inset-0 top-[750px]  bottom-[800px]" />
-      <hr className=" h-screen w-[1px] absolute   block" />
+      <hr className=" w-full absolute inset-0 flex !mt-auto !mb-[5.95rem]" />
+      <hr className=" h-screen w-[1px] inset-0 flex border-r-[1px] ml-auto border-[#E8E9EA]  absolute !mt-0 !mb-0 mr-[2.6rem] " />
     </Flex>
   );
 }

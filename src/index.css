@@ -1,6 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  @variants responsive {
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  }
+}
 :root {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
@@ -17,4 +30,3 @@ img {
   max-width: inherit !important;
   height: auto !important;
 }
-
