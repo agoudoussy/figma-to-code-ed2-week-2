@@ -3,7 +3,7 @@ import { VariantProps, cva } from "class-variance-authority";
 import { twMerge } from "tailwind-merge";
 
 const buttonVariants = cva(
-  "bg-[#0E1218] text-white text-[1.6rem] py-[1rem] px-[2.6rem] font-[600] w-max",
+  "bg-[#0E1218] text-white text-[1.6rem] py-[1rem] px-[2.6rem] font-[600] w-max whitespace-nowrap",
   {
     variants: {
       variant: {

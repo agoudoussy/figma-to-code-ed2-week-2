@@ -1,6 +1,8 @@
 import Ether from "assets/ether.svg?react";
 import Button from "./Button";
 import Flex from "./Flex";
+import { motion } from "framer-motion";
+import { fadeInVariant } from "animations/variants";
 
 export type TCollectionsCard = {
   img: string;
@@ -9,7 +11,16 @@ export type TCollectionsCard = {
 
 function CollectionsCard({ img, libelle }: TCollectionsCard) {
   return (
-    <div className=" border-[1px] border-[#B8BABE] rounded-[20px] p-[1.2rem] w-max">
+    <motion.div
+      variants={fadeInVariant}
+      transition={{
+        duration: 0.8,
+      }}
+      initial="initial"
+      viewport={{ once: true }}
+      whileInView="fadeIn"
+      className=" border-[1px] border-[#B8BABE] rounded-[20px] p-[1.2rem] w-max"
+    >
       <div>
         <img
           src={img}
@@ -31,7 +42,7 @@ function CollectionsCard({ img, libelle }: TCollectionsCard) {
           radius="sm"
         />
       </div>
-    </div>
+    </motion.div>
   );
 }
 

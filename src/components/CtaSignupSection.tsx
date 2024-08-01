@@ -11,7 +11,11 @@ function CtaSignupSection() {
         <p className=" text-[1.2rem] md:text-[1.6rem] leading-[28px] font-[600] ">
           Join almost 10k NFT profiles on Digit !
         </p>
-        <Button variant="white" text="Sign up now" />
+        <Button
+          variant="white"
+          text="Sign up now"
+          className=" hover:scale-[1.1] transition-transform"
+        />
       </div>
     </Container>
   );

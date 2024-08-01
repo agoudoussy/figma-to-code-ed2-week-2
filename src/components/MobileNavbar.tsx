@@ -2,6 +2,7 @@ import Button from "UI/Button";
 import ComponentListRender from "UI/ComponentListRender";
 import Flex from "UI/Flex";
 import MenuItem from "UI/MenuItem";
+import { AnimatePresence } from "framer-motion";
 import { MENU_ITEM } from "helpers";
 
 function MobileNavbar() {

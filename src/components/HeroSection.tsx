@@ -6,6 +6,7 @@ import Container from "UI/Container/Container";
 import CelesteRing from "assets/celesteRing.svg?react";
 import { CSSProperties, useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import { fadeUpAnimation } from "animations/animations";
 
 function HeroSection() {
   const [size, setSize] = useState(0);
@@ -20,23 +21,37 @@ function HeroSection() {
       setSize(height);
     }
   }, []);
+
   return (
     <Container className="border-l-[1px] border-[#E8E9EA] pt-[9.6rem] ">
-      <div
+      <motion.div
         className="hero-section-container relative flex flex-col md:flex-col lg:flex-row"
         style={heroStyle}
       >
         <div className="space-y-[5.2rem] w-max">
-          <h1 className="text-[5.2rem] md:text-[9.6rem] lg:text-[12rem] font-[300] w-[335px] md:w-[676px] lg:w-[689px] leading-[82px] lg:leading-[108px]">
+          <motion.h1
+            {...fadeUpAnimation}
+            transition={{
+              duration: 0.6,
+            }}
+            className="text-[5.2rem] md:text-[9.6rem] lg:text-[12rem] font-[300] w-[335px] md:w-[676px] lg:w-[689px] leading-[82px] lg:leading-[108px]"
+          >
             See the NFT new world
-          </h1>
+          </motion.h1>
 
           <Flex className="space-y-[2.6rem]  w-max">
-            <p className="w-[335px] md:w-[412px] text-[#484D56] font-[500] leading-[24px] ">
+            <motion.p
+              {...fadeUpAnimation}
+              transition={{
+                duration: 0.6,
+              }}
+              className="w-[335px] md:w-[412px] text-[#484D56] font-[500] leading-[24px] "
+            >
               Vorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
               turpis molestie, di
-            </p>
+            </motion.p>
             <Flex
+              tag="motion"
               row
               className=" w-max items-center justify-center space-x-[1.6rem]"
             >
@@ -60,22 +75,44 @@ function HeroSection() {
           <div className="absolute left-[125.82px] top-[32.52px] lg:top-0 lg:left-[151px] md:top-[30px] md:left-[261px]">
             <CelesteRing />
           </div>
-          <div className="flex md:flex-row  md:items-center md:justify-center w-[287.58px] h-[442.29px] rounded-[164px] bg-[#0f1010] overflow-hidden mt-[14.6rem]">
+          <motion.div
+            initial={{
+              translateY: 50,
+            }}
+            animate={{
+              translateY: 0,
+            }}
+            transition={{
+              duration: 0.5,
+            }}
+            className="flex md:flex-row  md:items-center md:justify-center w-[287.58px] h-[442.29px] rounded-[164px] bg-[#0f1010] overflow-hidden mt-[14.6rem]"
+          >
             <img
               src={MachineHead}
               alt="head moule with butterfly on it "
               className="!w-[130%] "
             />
-          </div>
-          <div className="flex items-center justify-center w-[287.58px] h-[442.29px] object-fill rounded-[164px] bg-[#0f1010] overflow-hidden ">
+          </motion.div>
+          <motion.div
+            initial={{
+              translateY: -50,
+            }}
+            animate={{
+              translateY: 0,
+            }}
+            transition={{
+              duration: 0.5,
+            }}
+            className="flex items-center justify-center w-[287.58px] h-[442.29px] object-fill rounded-[164px] bg-[#0f1010] overflow-hidden "
+          >
             <img
               src={Monkey}
               alt="Monkey wearing glass"
               className="!w-[178%]"
             />
-          </div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
     </Container>
   );
 }
