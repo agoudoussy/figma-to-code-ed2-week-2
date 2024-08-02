@@ -11,12 +11,12 @@ function BottomNavSection() {
         row
         className="border-t-[1px] flex-col space-y-[1.6rem] lg:flex-row border-[#E8E9EA] py-[3.2rem] justify-between lg:items-center"
       >
-        <h2 className=" text-[2.4rem] font-[700]">
+        <h2 className=" text-[2rem] md:text-[2.4rem] font-[700]">
           Create Explore & Collect Digital NFTs
         </h2>
         <Flex
           row
-          className=" items-center justify-center space-x-[3.4rem] w-max text-[1.4rem]"
+          className=" w-full items-center justify-center space-x-[3.4rem] md:w-max text-[1.4rem]"
         >
           <MenuItem libelle="Privacy" className="!font-[400] " path="#" />
           <MenuItem

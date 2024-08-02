@@ -1,4 +1,4 @@
-import { Link, NavLink, To } from "react-router-dom";
+import { NavLink, To } from "react-router-dom";
 import { twMerge } from "tailwind-merge";
 
 export type TMenuItem = {

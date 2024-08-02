@@ -10,7 +10,8 @@ const buttonVariants = cva(
         primary: " bg-black text-white  active:bg-[#4d4d4d] ",
         secondary: "bg-[#E8E9EA] text-black",
         white: "bg-white text-black",
-        outline: "bg-transparent border-[1px] border-[#0E1218] text-[#0E1218]",
+        outline:
+          "bg-transparent border-[1px] border-[#0E1218] text-[#0E1218] hover:bg-[#0E1218] hover:text-white",
       },
       radius: {
         full: "rounded-full",

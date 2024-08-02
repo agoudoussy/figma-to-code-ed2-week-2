@@ -15,7 +15,7 @@ function CreateAndSellNowSection() {
         colGap={2.4}
         rowGap={2.4}
         columnWidthTablet="282px"
-        className=" place-items-center place-content-center"
+        className=" place-items-center place-content-center px-[2.65rem] md:px-0"
       >
         <ComponentListRender data={PROCESS_CARD} Component={ProcessCard} />
       </Grid>

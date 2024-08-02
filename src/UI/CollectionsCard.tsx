@@ -2,7 +2,7 @@ import Ether from "assets/ether.svg?react";
 import Button from "./Button";
 import Flex from "./Flex";
 import { motion } from "framer-motion";
-import { fadeAndTranslateUpVariants, fadeInVariant } from "animations/variants";
+import { fadeAndTranslateUpVariants } from "animations/variants";
 
 export type TCollectionsCard = {
   img: string;
@@ -20,7 +20,7 @@ function CollectionsCard({ img, libelle }: TCollectionsCard) {
       initial="initial"
       viewport={{ once: true }}
       whileInView="translateUp"
-      className=" border-[1px] border-[#B8BABE] rounded-[20px] p-[1.2rem] w-max"
+      className=" border-[1px] border-[#B8BABE] rounded-[20px] p-[1.2rem] w-max cursor-pointer hover:border-[#5f6165]"
     >
       <div>
         <img

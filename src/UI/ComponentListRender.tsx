@@ -1,6 +1,5 @@
 type ComponentListRenderProps<T> = {
   data: any[];
-  notDataFoudMessage?: string;
   handleClick?: (element: any) => void;
   Component: React.ComponentType<
     T & { onClick?: () => void } & { element?: any; index: number }

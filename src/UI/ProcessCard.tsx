@@ -1,4 +1,4 @@
-import { fadeAndTranslateUpVariants, fadeInVariant } from "animations/variants";
+import { fadeAndTranslateUpVariants } from "animations/variants";
 import { motion } from "framer-motion";
 import { FunctionComponent, SVGProps } from "react";
 

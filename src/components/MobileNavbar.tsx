@@ -2,7 +2,6 @@ import Button from "UI/Button";
 import ComponentListRender from "UI/ComponentListRender";
 import Flex from "UI/Flex";
 import MenuItem from "UI/MenuItem";
-import { AnimatePresence } from "framer-motion";
 import { MENU_ITEM } from "helpers";
 
 function MobileNavbar() {
@@ -31,7 +30,7 @@ function MobileNavbar() {
           <MenuItem
             libelle="Sign up "
             path="#"
-            className="text-[#0E1218] border-r-[2px] border-[#0E1218] pr-[2.6rem]"
+            className="text-[#0E1218] !border-r-[2px] !border-[#0E1218] pr-[2.6rem]"
           />
           <Button text="Connect Wallet" />
         </Flex>

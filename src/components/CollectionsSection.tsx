@@ -1,12 +1,10 @@
-import CollectionsCard from "UI/CollectionsCard";
 import ComponentListRender from "UI/ComponentListRender";
 import Container from "UI/Container/Container";
 import Flex from "UI/Flex";
-import Grid from "UI/Grid";
 import MenuItem from "UI/MenuItem";
 import { fadeInVariant } from "animations/variants";
 import { motion } from "framer-motion";
-import { COLLECTIONS_CARD, COLLECTIONS_CATEGORY } from "helpers/utils";
+import { COLLECTIONS_CATEGORY } from "helpers/utils";
 import { Link, Outlet } from "react-router-dom";
 
 function CollectionsSection() {

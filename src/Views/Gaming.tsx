@@ -14,7 +14,7 @@ function Gaming() {
         className=" place-items-center place-content-center"
       >
         <ComponentListRender
-          data={COLLECTIONS_CARD}
+          data={COLLECTIONS_CARD.reverse()}
           Component={CollectionsCard}
         />
       </Grid>

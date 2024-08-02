@@ -5,7 +5,7 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Categories from "Views/Categories";
 import Art from "Views/Art";
 import Celebrities from "Views/Celebrities";
-import Gaming from "Views/Gaming copy";
+import Gaming from "Views/Gaming";
 import Sport from "Views/Sport";
 
 function App() {
