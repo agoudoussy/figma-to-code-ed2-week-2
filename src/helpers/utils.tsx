@@ -1,4 +1,4 @@
-import { TCollectionsCard } from "UI/CollectionsCard";
+import { TCollectionsCard } from "UI/CollectionCard";
 import { TMenuItem } from "UI/MenuItem";
 import MonkeyD from "assets/monkeyD.jpg";
 import Snoop from "assets/snoop.jpg";

@@ -1,4 +1,4 @@
-import CollectionsCard from "UI/CollectionsCard";
+import CollectionsCard from "UI/CollectionCard";
 import ComponentListRender from "UI/ComponentListRender";
 import Grid from "UI/Grid";
 import { COLLECTIONS_CARD } from "helpers/utils";

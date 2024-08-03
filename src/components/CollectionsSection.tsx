@@ -2,6 +2,7 @@ import ComponentListRender from "UI/ComponentListRender";
 import Container from "UI/Container/Container";
 import Flex from "UI/Flex";
 import MenuItem from "UI/MenuItem";
+import NavigationButton from "UI/NavigationButton";
 import { fadeInVariant } from "animations/variants";
 import { motion } from "framer-motion";
 import { COLLECTIONS_CATEGORY } from "helpers/utils";
@@ -30,7 +31,7 @@ function CollectionsSection() {
             <ComponentListRender
               data={COLLECTIONS_CATEGORY}
               Component={(item: any) => (
-                <MenuItem
+                <NavigationButton
                   {...item}
                   activeStyle="items-center whitespace-nowrap font-[600] flex items-center justify-center  px-[2.6rem] text-[1.6rem] text-white py-[1rem] bg-[#0E1218] rounded-[12px]"
                 />
