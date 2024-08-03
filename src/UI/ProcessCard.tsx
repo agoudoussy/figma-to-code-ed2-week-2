@@ -23,7 +23,7 @@ function ProcessCard({ icone: Icone, title, libelle }: TProcessCard) {
       <div className="bg-[#181D28] p-[1rem] w-max rounded-[8px]">
         <Icone />
       </div>
-      <h3 className="text-[800]">{title}</h3>
+      <h3 className="font-[800] text-[2rem]">{title}</h3>
       <p className=" text-[#484D56] text-[1.4rem]">{libelle}</p>
     </motion.div>
   );
