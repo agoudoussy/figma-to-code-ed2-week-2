@@ -19,11 +19,15 @@ function HeroSection() {
     "--height": `${size}px`,
   } as CSSProperties;
 
-  useEffect(() => {
+  const handleHeroSize = () => {
     if (heroRef.current) {
       const height = heroRef.current?.getBoundingClientRect().width;
       setSize(height);
     }
+  };
+
+  useEffect(() => {
+    handleHeroSize();
   }, []);
 
   return (
@@ -87,7 +91,7 @@ function HeroSection() {
             initial="initial"
             whileInView="translateUp"
             viewport={{ once: true }}
-            className="flex md:flex-row  md:items-center md:justify-center w-[287.58px] h-[442.29px] rounded-[164px] bg-[#0f1010] overflow-hidden mt-[14.6rem]"
+            className="flex md:flex-row  items-center justify-center w-[287.58px] h-[442.29px] rounded-[164px] bg-[#0f1010] overflow-hidden mt-[14.6rem]"
           >
             <img
               src={MachineHead}
