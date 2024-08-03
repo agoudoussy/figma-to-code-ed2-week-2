@@ -30,7 +30,7 @@ function MobileNavbar() {
           <MenuItem
             libelle="Sign up "
             path="#"
-            className="text-[#0E1218] border-r-[2px] !border-[#0E1218] pr-[2.6rem] bg-black"
+            className="text-[#0E1218]  border-r-[2px] border-[#0E1218] pr-[2.6rem]"
           />
           <Button text="Connect Wallet" />
         </Flex>
