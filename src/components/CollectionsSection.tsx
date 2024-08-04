@@ -33,7 +33,7 @@ function CollectionsSection() {
               Component={(item: any) => (
                 <NavigationButton
                   {...item}
-                  activeStyle="items-center whitespace-nowrap font-[600] flex items-center justify-center  px-[2.6rem] text-[1.6rem] text-white py-[1rem] bg-[#0E1218] rounded-[12px]"
+                  activeStyle="items-center !h-max whitespace-nowrap font-[500] flex items-center justify-center  px-[2.6rem] text-[1.6rem] text-white py-[1rem] bg-[#0E1218] rounded-[12px]"
                 />
               )}
             />

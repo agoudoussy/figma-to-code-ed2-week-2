@@ -15,7 +15,7 @@ function NavigationButton({
         isActive
           ? activeStyle
           : twMerge(
-              "bg-[#E8E9EA] text-[1.6rem] py-[1rem] px-[2.6rem] w-max whitespace-nowrap rounded-[12px] font-[600] leading-[2.4rem] lg:leading-[36px] text-[#12171F] h-max",
+              "bg-[#E8E9EA] text-[1.6rem] py-[1rem] px-[2.6rem] w-max whitespace-nowrap rounded-[12px] font-[500] leading-[2.4rem] text-[#12171F] h-max",
               className
             )
       }

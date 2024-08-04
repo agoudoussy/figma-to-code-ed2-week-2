@@ -30,3 +30,7 @@ img {
   max-width: inherit !important;
   height: auto !important;
 }
+
+a {
+  display: block;
+}

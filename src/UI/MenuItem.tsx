@@ -12,7 +12,7 @@ function MenuItem({ libelle, path, className }: TMenuItem) {
     <NavLink
       to={path ?? "#"}
       className={twMerge(
-        "font-[600] leading-[2.4rem] lg:leading-[36px] text-[#12171F] h-max",
+        "font-[500] leading-[2.4rem] lg:leading-[36px] text-[#12171F]",
         className
       )}
     >
