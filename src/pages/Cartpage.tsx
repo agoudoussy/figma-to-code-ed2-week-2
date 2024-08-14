@@ -28,7 +28,7 @@ function Cartpage() {
           className="w-full border-b-[1px] border-[#E5E5E5] justify-between text-[#7E7E7E] py-[1.2rem] mt-[2rem]"
         >
           <p>Product</p>
-          <Flex row className=" space-x-[18.5rem]">
+          <Flex row className="space-x-[103.5rem] md:space-x-[18.5rem]">
             <p>Quantity</p>
             <p>Price</p>
           </Flex>

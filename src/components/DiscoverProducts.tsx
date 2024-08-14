@@ -38,7 +38,8 @@ function DiscoverProducts() {
   ]);
   const { products, isLoadingProducts } = getAllProduct;
   const { collections, getCollectionIsLoading } = getPopularCollectionsList();
-  const { collectionProducts } = getCollectionProductsList(id, 10);
+  const { collectionProducts, getCollectionProductListIsLoading } =
+    getCollectionProductsList(id, 10);
 
   const getVariantsBySelectedCollection = (id: string) =>
     queryParamsEquals(selectedCollection.id, id) ? "primary" : "outline";
@@ -86,7 +87,7 @@ function DiscoverProducts() {
           />
         </Flex>
 
-        {(isLoadingProducts || getCollectionIsLoading) && (
+        {(isLoadingProducts || getCollectionProductListIsLoading) && (
           <SkeletonListRender number={6} Component={ProcessCardSekelton} />
         )}
 
