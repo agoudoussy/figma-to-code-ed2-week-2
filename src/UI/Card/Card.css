@@ -1,0 +1,32 @@
+.card {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 50px #0000001a;
+  width: 100%;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  /* max-width: 240px;
+  min-width: 200px; */
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.card-icone {
+  padding-inline: 0.6875rem;
+  padding-block: 0.5625rem;
+  box-shadow: 0px 0px 50px #0000001a;
+  border-radius: 100vmax;
+}
+
+.card span {
+  font-size: 0.875rem;
+}
+
+@media screen and (max-width: 460px) {
+  .card {
+    min-width: 100%;
+  }
+}

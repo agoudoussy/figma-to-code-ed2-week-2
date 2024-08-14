@@ -14,8 +14,51 @@
     }
   }
 }
+
+@layer components {
+  .footer-menu-item {
+    @apply !text-[#C3C3C3] md:text-[1.6rem] text-[1.2rem];
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1;
+}
+
+.outlined-text {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+}
+
+.banner {
+  /* background-image: black, url("./assets/bannerImg.jpg"); */
+  background-image: linear-gradient(
+      90deg,
+      rgba(188, 188, 188, 0) 0%,
+      rgba(0, 0, 0, 0.25) 100%
+    ),
+    url("./assets/bannerImg.jpg");
+  /* background-blend-mode: soft-light; */
+  background-size: cover;
+  background-position: center;
+}
+
+.classic-main-conatiner {
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.25) 0%,
+      rgba(0, 0, 0, 0.25) 100%
+    ),
+    url("./assets//abraham.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 :root {
-  font-family: "Raleway", sans-serif;
+  font-family: "Archivo", sans-serif;
   font-optical-sizing: auto;
   line-height: 1.5;
   font-size: 62.5%;

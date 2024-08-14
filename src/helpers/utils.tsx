@@ -1,54 +1,37 @@
-import { TCollectionsCard } from "UI/CollectionCard";
 import { TMenuItem } from "UI/MenuItem";
-import MonkeyD from "assets/monkeyD.jpg";
-import Snoop from "assets/snoop.jpg";
-import astroHead from "assets/astroHead.jpg";
-import astro from "assets/astro.jpg";
 import { TProcessCard } from "UI/ProcessCard";
 import wallet from "assets/wallet.svg?react";
 import cloud from "assets/cloud.svg?react";
 import bitcoin from "assets/bitcoin.svg?react";
 import sale from "assets/sale.svg?react";
 
-export const MENU_ITEM: TMenuItem[] = [
+export const LEFT_MENU_ITEM: TMenuItem[] = [
   {
-    libelle: "Home",
+    libelle: "Men",
     path: "#",
   },
   {
-    libelle: "Top sales",
+    libelle: "Women",
     path: "#",
   },
   {
-    libelle: "Collections",
+    libelle: "Kids",
     path: "#",
   },
   {
-    libelle: "Our blog",
+    libelle: "Collection",
+    path: "#",
+  },
+];
+
+export const RIGH_MENU_ITEM: TMenuItem[] = [
+  {
+    libelle: "Shop",
     path: "#",
   },
   {
     libelle: "About us",
     path: "#",
-  },
-];
-
-export const COLLECTIONS_CARD: TCollectionsCard[] = [
-  {
-    img: MonkeyD,
-    libelle: "CyberPunk",
-  },
-  {
-    img: astro,
-    libelle: "Durolost  Boll - Upper",
-  },
-  {
-    img: astroHead,
-    libelle: "Space X Wiper",
-  },
-  {
-    img: Snoop,
-    libelle: "Snoop Dogg",
   },
 ];
 
@@ -101,3 +84,15 @@ export const COLLECTIONS_CATEGORY = [
     path: "/sport",
   },
 ];
+
+export const splitString = (character: string, value: string) => {
+  return value.split(character);
+};
+
+export const locationContains = (key: string) => {
+  return location.href.includes(key);
+};
+
+export const generateArray = (n: number) => {
+  return Array(n).fill();
+};

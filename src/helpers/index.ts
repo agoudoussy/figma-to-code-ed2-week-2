@@ -1,1 +1,1 @@
-export { MENU_ITEM } from "./utils";
+export { LEFT_MENU_ITEM, RIGH_MENU_ITEM } from "./utils";

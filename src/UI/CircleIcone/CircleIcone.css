@@ -1,0 +1,31 @@
+.notification {
+  width: 35px;
+  padding: 0.5rem;
+  border-radius: 100%;
+  aspect-ratio: 1/1;
+}
+
+.options {
+  width: max-content;
+  padding: 0.5rem;
+  border-radius: 10px;
+  aspect-ratio: auto;
+}
+
+.notification span {
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.notification > * + * {
+  margin-left: 0.5rem;
+}
+
+@media screen and (max-width: 460px) {
+  .notification {
+    width: 35px;
+  }
+  .notification span {
+    display: none;
+  }
+}

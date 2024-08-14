@@ -1,27 +1,31 @@
 import { Suspense, lazy } from "react";
 import FallbackUI from "UI/FallbackUI";
 import "./App.css";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import Categories from "Views/Categories";
-import Art from "Views/Art";
-import Celebrities from "Views/Celebrities";
-import Gaming from "Views/Gaming";
-import Sport from "Views/Sport";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "pages/HomePage";
+import ProductDetail from "pages/ProductDetail";
+import Cartpage from "pages/Cartpage";
+import CheckoutPage from "pages/CheckoutPage";
+import PayementConfirmationPage from "pages/PayementConfirmation";
+import ScrollToTop from "UI/ScrollToTop";
 
 function App() {
   const Home = lazy(() => import("pages/Home"));
 
   return (
     <Suspense fallback={<FallbackUI />}>
-      <BrowserRouter basename="/figma-to-code-ed2-week-1">
+      <BrowserRouter basename="/figma-to-code-ed2-week-2">
+        <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Navigate to="/categories" />} />
           <Route path="/" element={<Home />}>
-            <Route path="categories" element={<Categories />} />
-            <Route path="art" element={<Art />} />
-            <Route path="celebrities" element={<Celebrities />} />
-            <Route path="gaming" element={<Gaming />} />
-            <Route path="sport" element={<Sport />} />
+            <Route index element={<HomePage />} />
+            <Route path="/product-details/:id" element={<ProductDetail />} />
+            <Route path="/cart" element={<Cartpage />} />
+            <Route path="/checkout" element={<CheckoutPage />} />
+            <Route
+              path="confirmation-payement"
+              element={<PayementConfirmationPage />}
+            />
           </Route>
         </Routes>
       </BrowserRouter>

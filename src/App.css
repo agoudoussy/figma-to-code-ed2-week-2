@@ -4,33 +4,26 @@
   font-weight: 500;
   color: #0e1218;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-.hero-section-container {
-  height: var(--height);
+.hamburger_menu-item-1 {
+  transform: rotate(0deg);
+  transition: all ease 0.25;
 }
 
-.cta-signup-container {
-  background-image: linear-gradient(90deg, rgb(1, 1, 2) 0%, rgb(0, 19, 30) 100%),
-    url("./assets/bicAstro.jpg");
-  /* background-color: rgba(0, 0, 0, 0.); */
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+.hamburger_menu-item-2 {
+  transition: all ease 0.25;
+  transform: rotate(0deg);
 }
 
-@media screen and (max-width: 468px) {
-  .hero-section-illustration-container {
-    display: -webkit-inline-box !important;
-  }
-  .hero-section-container {
-    height: auto;
-  }
+.hamburger_menu-item-1.open {
+  transform-origin: 1px 3px;
+  transform: rotate(30deg);
 }
 
-@media screen and (max-width: 768px) {
-  .hero-section-container {
-    height: auto !important;
-  }
+.hamburger_menu-item-2.open {
+  transform-origin: 11px 3px;
+  transform: rotate(-30deg);
 }

@@ -5,6 +5,6 @@ import svgr from "vite-plugin-svgr";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/figma-to-code-ed2-week-1/",
+  base: "/figma-to-code-ed2-week-2/",
   plugins: [react(), tsconfigPaths(), svgr()],
 });
